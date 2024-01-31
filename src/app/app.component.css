@@ -1,0 +1,11 @@
+.page-title {
+  text-align: center;
+  color: #0066ba;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.app-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}

@@ -1,0 +1,21 @@
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <h4 class="card-title semi-bold delete-title">DELETE DIRECT REPORT</h4>
+  </div>
+  <div class="modal-body">
+    <div>
+      <p>Permanently delete direct report {{employeeData?.firstName}} {{employeeData?.lastName}}?</p>
+    </div>
+    <br/>
+    <div>
+      <p>This action cannot be undone.</p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="form-controls">
+      <button class="pointer mindex-btn ok" (click)="deleteEmployee()">Ok</button>
+      <button id="cancel-btn" class="pointer mindex-btn cancel" type="submit" (click)="closeDialog()">Cancel</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1, h2, h3, h4, h5, h6, p, span, label, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-primary {
+  background-color: #6874b7;
+}
+
+.fg-primary {
+  color: #6874b7;
+}
+
+.bg-danger {
+  background-color: #db715c;
+}
+
+.fg-success {
+  color: #6BB768;
+}
+
+.bg-success {
+  background-color: #6BB768;
+}
+
+.fg-danger {
+  color: #db715c;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p, label, mat-label {
+  font-size: 14px;
+}
+
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.fs-large {
+  font-size: 16px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mr {
+  margin-right: 8px;
+}
+
+.ml {
+  margin-left: 8px;
+}
+
+.mb {
+  margin-bottom: 8px;
+}
+
+.mt {
+  margin-top: 8px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: .5;
+}
+
+.disabled .form-input {
+  border: 1px solid grey !important;
+}
+
+.card-title {
+  color: #0066ba;
+  font-weight: bold;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+input:focus-visible {
+  border: 2px solid #6874b7 !important;
+}
+
+.input-wrapper {
+  margin-bottom: 12px;
+}
+
+.input-wrapper .form-label {
+  font-size: 10px;
+  color: #6874b7;
+  position: relative;
+  top: 8px;
+  left: 5px;
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.input-wrapper .form-input {
+  height: 50px;
+  border-radius: 4px;
+  border: 2px solid #6874b7;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input-wrapper .asterisk{
+  margin-left: 4px;
+}
+
+.normal-text {
+  font-weight: normal !important;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.mat-dialog-container {
+  max-width: 250px;
+  padding: 12px 16px !important;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

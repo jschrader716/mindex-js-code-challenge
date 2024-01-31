@@ -1,0 +1,47 @@
+<mat-card class="employee">
+  <mat-card-header class="card-header">
+    <mat-card-title class="card-title">{{employee.firstName}} {{employee.lastName}}, {{employee.position}}</mat-card-title>
+    <div class="subtitles">
+      <mat-card-subtitle class="subtitle">Employee ID: {{employee.id}}</mat-card-subtitle>
+      <mat-card-subtitle class="subtitle">Direct Reports: {{totalReports}}</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <hr class="seperator"/>
+  <mat-card-content>
+    <div class="reports-wrapper">
+      <div class="reports-title">
+        <p class="fs-large">Direct Reports:</p>
+      </div>
+        <mat-list-item *ngFor="let empReport of directEmpRep">
+          <div class="emp-data-wrapper">
+            <div class="flex align-center">
+              <p class="emp-value">{{empReport.firstName}} {{empReport.lastName}}, <span class="bold">{{empReport.position}}</span></p>
+            </div>
+            <div class="actions-wrapper">
+              <mat-icon class="action-icon pointer fg-primary" style="margin-right: 8px;" (click)="editEmployeeReport(empReport)">edit</mat-icon>
+              <mat-icon class="action-icon pointer fg-danger" (click)="deleteEmployeeReport(empReport)">delete</mat-icon>
+            </div>
+          </div>
+        </mat-list-item>
+        <p *ngIf="directEmpRep?.length == 0" class="empty-reports">This employee has no direct reports.</p>
+    </div>
+    <div class="reports-wrapper">
+      <div class="reports-title">
+        <p class="fs-large">Indirect Reports:</p>
+      </div>
+        <mat-list-item *ngFor="let empReport of indirectEmpRep">
+          <div class="emp-data-wrapper">
+            <div class="flex align-center">
+              <p class="emp-value">{{empReport.firstName}} {{empReport.lastName}}, <span class="bold">{{empReport.position}}</span></p>
+            </div>
+            <div class="actions-wrapper">
+              <mat-icon id="edit-icon" class="action-icon pointer" style="margin-right: 8px;" (click)="editEmployeeReport(empReport)">edit</mat-icon>
+              <mat-icon class="action-icon pointer fg-danger" (click)="deleteEmployeeReport(empReport)">delete</mat-icon>
+            </div>
+          </div>
+        </mat-list-item>
+        <p *ngIf="indirectEmpRep?.length == 0" class="empty-reports">This employee has no indirect reports.</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+

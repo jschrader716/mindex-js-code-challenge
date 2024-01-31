@@ -1,0 +1,33 @@
+.mindex-btn {
+  padding: 8px 12px;
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-width: 200px;
+  transition: background-color .2s;
+}
+
+.form-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+}
+
+.modal-body {
+  margin-bottom: 16px;
+}
+
+.mindex-btn.cancel:hover, .mindex-btn.ok:hover  {
+  transition: background-color .2s;
+  background-color: #919191;
+}
+
+.mindex-btn.save:hover  {
+  transition: background-color .2s;
+  background-color: #6BB768;
+}

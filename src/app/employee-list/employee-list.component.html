@@ -1,0 +1,3 @@
+<div *ngFor="let emp of employees">
+  <app-employee [employee]="emp" (modifyEmployee)="handleEmployeeModification($event)"></app-employee>
+</div>

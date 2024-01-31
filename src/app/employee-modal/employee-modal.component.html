@@ -1,0 +1,32 @@
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <h4 class="card-title semi-bold m-0 mb mt">UPDATE COMPENSATION</h4>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="form">
+      <div class="input-wrapper" [ngClass]="(this.form.controls.firstName.disabled) ? 'disabled' : ''">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-input" formControlName="firstName"/>
+      </div>
+      <div class="input-wrapper" [ngClass]="(this.form.controls.lastName.disabled) ? 'disabled' : ''">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-input" formControlName="lastName"/>
+      </div>
+      <div class="input-wrapper" [ngClass]="(this.form.controls.position.disabled) ? 'disabled' : ''">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-input" formControlName="position"/>
+      </div>
+      <div class="input-wrapper" [ngClass]="(this.form.controls.compensation.disabled) ? 'disabled' : ''">
+        <label class="form-label">Compensation<span class="fg-primary asterisk">*</span></label>
+        <input type="text" class="form-input" formControlName="compensation"/>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <div class="form-controls">
+      <button class="pointer mindex-btn save" type="submit" (click)="saveEmployee()">Save</button>
+      <button id="cancel-btn" class="pointer mindex-btn cancel" type="submit" (click)="closeDialog()">Cancel</button>
+    </div>
+  </div>
+</div>
+

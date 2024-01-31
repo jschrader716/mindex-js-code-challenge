@@ -1,0 +1,40 @@
+.mindex-btn {
+  padding: 8px 12px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-width: 200px;
+  box-shadow: 0 1px 1px grey;
+  min-width: 50px;
+  transition: background-color .2s;
+}
+
+.form-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+}
+
+.modal-body {
+  margin-bottom: 16px;
+}
+
+.mindex-btn.ok:hover  {
+  transition: background-color .2s, color .2s;
+  background-color: #6874b7;
+  color: white;
+}
+
+.mindex-btn.cancel:hover  {
+  transition: background-color .2s, color .2s;
+  background-color: #919191;
+  color: white;
+}
+
+.delete-title {
+  margin: 12px 0px;
+}
